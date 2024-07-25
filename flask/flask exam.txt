@@ -1,0 +1,71 @@
+Que1.What is Flask and what are its main features?
+Ans: Flask is  a python framework. It is also called as micro web framework.
+Features of flask
+1.It does not required any tools or libraries
+2.It is fast as compared to Django'
+3.It is light weight
+4.Their is no abstraction layer in flask
+
+
+Que 2.How do you install Flask?
+Ans : first activate the virtual environment
+we can install flask by the command in command line pip install flask in a particular directory where we want  to install flask 
+
+
+Que 3.What are some advantages of using Flask for web development?
+Ans:1.Flask is used to create a light weight web application and it is also easy to learn
+    2.It is flexible means developer can use their on tools and libraries 
+    3.Flask is scalable and can used to build web application that can handle large  number of users and request
+    4.Flask has large community of developers  to contribute in frame work and provide support to users
+    5. Flask has many tools and libraries  for build and deploy  web application
+
+Que 4.Explain the concept of routing in Flask.
+Ans: Routing is the process of mapping URLs to specific function within web application
+     In flask  , a route is defined @app.route() decorator
+
+Que 5.How do you create a basic Flask application?
+Ans: first  activate virtual environment
+     then install flask by using pip install flask
+     the  write the  code as follows
+     from flask import Flask  
+     app = Flask(__name__) 
+     @app.route('/') 
+     def home():  
+    	return "hello";  
+  
+    if __name__ =='__main__':  
+     app.run(debug = True)  
+
+
+
+Que 6.What is the purpose of the route() decorator in Flask?
+
+Ans:The route() decorator in Flask is used to bind a function to a URL.
+    The route() decorator can also be used to specify HTTP methods.
+
+
+Que 7.How do you handle HTTP methods like GET and POST in Flask?
+Ans:To handle HTTP methods like GET and POST in Flask, you can use the methods argument of the route() decorator. 
+This argument takes a list of HTTP methods that the route should handle. For example, the following route will handle both GET and POST requests.
+
+Que 8.What is a Flask blueprint and how is it used?
+Ans:A Flask blueprint is a way to organize a Flask application's code by grouping related views, templates, and other elements. 
+Blueprints can help simplify large applications and make them more manageable.Blueprints can be registered on an application at a URL prefix and/or subdomain.
+
+Que 9.How do you render templates in Flask?
+Ans:To render templates in Flask, you can use the render_template() helper function. This function serves an HTML template as the response.we use jinja 2 for rendering the template
+
+
+
+Que 10.What is Jinja2 and how does Flask use it for template rendering?
+Ans:Jinja2 is a modern and powerful template engine for Python. 
+It is used by Flask to render templates. J
+jinja2 templates are HTML files that contain special syntax that allows to insert dynamic content into the page.
+To use Jinja2 templates in Flask first need to create a templates directory in  project.
+ This is where  store  Jinja2 templates.
+Next need to configure Flask to use Jinja2.  
+Can do this by adding the following code to your Flask app's configuration file
+TEMPLATES_AUTO_RELOAD = True
+This will tell Flask to automatically reload your Jinja2 templates when they change.
+Finally,  can render a Jinja2 template by calling the render_template() function. 
+This function takes the name of the template file as its first argument. 
